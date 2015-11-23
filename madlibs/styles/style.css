@@ -1,0 +1,89 @@
+/* main.css */
+
+body {
+    background-color: #EBA776;
+}
+.container {
+  padding-top: 50px;
+  max-width: 600px;
+}
+ul {
+    list-style-type: none;
+    padding: 60px 0px;
+}
+li {
+    padding-top: 10px;
+}
+div.anim h1 {
+    font-size: 3em;
+    font-family: 'Mountains of Christmas', cursive;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+input#noun, input#adjective, input#name {
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #7D7D7D;
+}
+button#lib-button {
+    width: 75%;
+    margin-left: 15%;
+    background-color: #efb73e;
+    border-radius: 10px;
+    border-width: 0px;
+    color: #fff;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.5em;
+    transition: background-color 0.5s ease;
+}
+button#lib-button:hover {
+    background-color: #CE5E5D;
+}
+div#story {
+    padding-top: 30px;
+}
+/* animation css */
+
+div.anim {
+  width: 200px;
+  height: 200px; 
+  background-color: coral; 
+  animation: square-to-circle 2s 1s infinite alternate; 
+  outline: 1px solid transparent;
+  background-position: 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:coral;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    transform:rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    transform:rotate(180deg);
+  }
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+
